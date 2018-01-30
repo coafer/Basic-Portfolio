@@ -174,9 +174,30 @@ input:focus {
 
 .tiles{
     width: 100%;
-    background-color: #FC626B;
+/*    background-color: #FC626B;*/
     height: 21vh;
-    margin-top: 20px
+    margin-top: 20px;
+    position: relative;
+}
+
+.titles, .print{
+    background: url("../images/print.jpg") padding-box no-repeat center; 
+    background-size: cover;
+}
+
+.titles, .web{
+    background: url("../images/web.jpg") padding-box no-repeat top; 
+    background-size: cover;
+}
+
+.titles, .illustration{
+    background: #FC626B url("../images/illustrations.png") padding-box no-repeat center; 
+    background-size: 320px;
+}
+
+.titles, .pack{
+    background: #FC626B url("../images/packaging.jpg") padding-box no-repeat bottom; 
+    background-size: 350px;
 }
 
 .col-l{
@@ -192,7 +213,18 @@ input:focus {
 }
 
 .tiles h3{
-    color: white;   
+    text-align: center;
+    display: block;
+    background-color: #FC626B;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.tiles h3 a{
+    color: #b8ecfd; 
+    text-decoration: none;
 }
 
 
